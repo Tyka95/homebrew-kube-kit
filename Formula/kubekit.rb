@@ -1,8 +1,8 @@
 class Kubekit < Formula
   desc "Interactive terminal UI toolkit for Kubernetes and AWS workflows"
   homepage "https://github.com/Tyka95/kube-kit"
-  url "https://github.com/Tyka95/kube-kit.git", tag: "v0.1.3"
-  version "0.1.3"
+  url "https://github.com/Tyka95/kube-kit.git", tag: "v0.1.4"
+  version "0.1.4"
   license "MIT"
 
   depends_on "gum"
