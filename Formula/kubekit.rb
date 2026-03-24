@@ -12,6 +12,7 @@ class Kubekit < Formula
     libexec.install "kubekit.sh"
     chmod 0755, libexec/"kubekit.sh"
     bin.install_symlink libexec/"kubekit.sh" => "kubekit"
+    bin.install_symlink libexec/"kubekit.sh" => "kube"
   end
 
   test do
