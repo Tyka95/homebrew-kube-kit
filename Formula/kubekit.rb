@@ -5,7 +5,7 @@
 class Kubekit < Formula
   desc "Terminal UI for Kubernetes and AWS workflows."
   homepage "https://github.com/Tyka95/kube-kit"
-  version "0.1.17"
+  version "0.1.18"
   license "MIT"
 
   depends_on "awscli"
@@ -13,8 +13,8 @@ class Kubekit < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Tyka95/kube-kit/releases/download/v0.1.17/kubekit_0.1.17_macos_x86_64.tar.gz"
-      sha256 "18354a079bafe9f5db7257a73ed5b5800078f85a2dc64062d1f5dd85385249bc"
+      url "https://github.com/Tyka95/kube-kit/releases/download/v0.1.18/kubekit_0.1.18_macos_x86_64.tar.gz"
+      sha256 "757d48cb2320e6cb43d44ffb12f60fce5aad716f0dfff9fdc6ed6d23af307c3e"
 
       define_method(:install) do
         bin.install "kubekit"
@@ -24,8 +24,8 @@ class Kubekit < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Tyka95/kube-kit/releases/download/v0.1.17/kubekit_0.1.17_macos_arm64.tar.gz"
-      sha256 "6f4117a06cccce468532937cb72c081dc06a0f010cfada04352adadc4b940570"
+      url "https://github.com/Tyka95/kube-kit/releases/download/v0.1.18/kubekit_0.1.18_macos_arm64.tar.gz"
+      sha256 "5589df8dc7f9c362da8c47877898198f50a5b01e461400902f4fb69dc28cdfbc"
 
       define_method(:install) do
         bin.install "kubekit"
@@ -38,8 +38,8 @@ class Kubekit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Tyka95/kube-kit/releases/download/v0.1.17/kubekit_0.1.17_linux_x86_64.tar.gz"
-      sha256 "ef66d4c3f059e9995aa8e8b351ab9a408e56a038c652a6554465544d2415ca85"
+      url "https://github.com/Tyka95/kube-kit/releases/download/v0.1.18/kubekit_0.1.18_linux_x86_64.tar.gz"
+      sha256 "278602f02e77cf13baa36ea0f6ef4aa2811c2bca40a65b11c92ab21169be1ec0"
       define_method(:install) do
         bin.install "kubekit"
         # Keep the short `kube` alias for backward compatibility with the
@@ -48,8 +48,8 @@ class Kubekit < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Tyka95/kube-kit/releases/download/v0.1.17/kubekit_0.1.17_linux_arm64.tar.gz"
-      sha256 "afb57f2b3424ffcb104f5279fe683a383a4c1ced9f772b9283d27fbda13302fe"
+      url "https://github.com/Tyka95/kube-kit/releases/download/v0.1.18/kubekit_0.1.18_linux_arm64.tar.gz"
+      sha256 "252e77efafad0472734338c618d0a0b4f0f79e3d08bb4a533252b26114777a7e"
       define_method(:install) do
         bin.install "kubekit"
         # Keep the short `kube` alias for backward compatibility with the
